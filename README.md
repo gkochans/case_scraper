@@ -6,7 +6,7 @@ The idea is to copy and paste that list into a service like Westlaw's "Find & Pr
 
 For whatever reason, I have had success extracting text from *.RTF files, but not from *.DOC or *.DOCX files. The header/metadata information extracts properly from files in the latter two formats, but not the body text.
 
-I have included `test.rtf`, which includes citations to a variety of federal and state reporters, to demonstrate how the script works.
+I have included `test.rtf`, which contains a list of citations to a variety of federal and state reporters, to demonstrate how the script works.
 
 # Installation And Dependencies
 
