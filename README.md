@@ -1,6 +1,8 @@
 # Scraping case citations from legal briefs in RTF format.
 
-This simple Ruby script relies on the [Yomu](https://github.com/Erol/yomu) library, which extracts the body text from various document formats. For whatever reason, I have had success extracting text from *.RTF files, but not from *.DOC or *.DOCX files. The header/metadata information extracts properly from files in the latter two formats, but not the body text.
+This simple Ruby script relies on the [Yomu](https://github.com/Erol/yomu) library, which extracts the body text from various document formats. It does not extract the complete citation, only the volume number, reporter abbreviation, and starting page number. The idea is to copy and paste that list into a service like Westlaw's "Find & Print" to retrieve all the cases. Auto-generating the list saves a considerable amount of time compared to copying cites manually, one by one.
+
+For whatever reason, I have had success extracting text from *.RTF files, but not from *.DOC or *.DOCX files. The header/metadata information extracts properly from files in the latter two formats, but not the body text.
 
 # Installation And Dependencies
 
@@ -16,7 +18,7 @@ gem install case_scraper
 case_scraper [input.rtf] [output.txt]
 ```
 
-Follow the prompts. The script will launch the output file in your default text editor. 
+Follow the prompts. The script will launch the output file in your default text editor.
 
 The citation list, one per line, is in the appropriate format for cutting and pasting directly into Westlaw's "Find & Print" feature. (The maximum number of lines for a single Find & Print query is 99.)
 
