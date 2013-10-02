@@ -1,8 +1,6 @@
 # Scraping case citations from legal briefs in RTF format.
 
-This simple Ruby script relies on the [Yomu](https://github.com/Erol/yomu) library, which extracts the body text from various document formats. The script does not extract the full citations, only the volume number, reporter abbreviation, and starting page number.
-
-The idea is to copy and paste that list into a service like Westlaw's "Find & Print" to retrieve all the cases. Auto-generating the list saves a considerable amount of time compared to copying cites manually, one by one.
+This simple Ruby script relies on the [Yomu](https://github.com/Erol/yomu) library, which extracts the body text from various document formats. It does not extract the complete citation, only the volume number, reporter abbreviation, and starting page number. The idea is to copy and paste that list into a service like Westlaw's "Find & Print" to retrieve all the cases. Auto-generating the list saves a considerable amount of time compared to copying cites manually, one by one.
 
 For whatever reason, I have had success extracting text from *.RTF files, but not from *.DOC or *.DOCX files. The header/metadata information extracts properly from files in the latter two formats, but not the body text.
 
