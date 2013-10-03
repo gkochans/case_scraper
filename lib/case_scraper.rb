@@ -67,7 +67,7 @@ text = Yomu.read :text, data
 # If not, then create the output file.
 
 if File.exist?(output)
-  puts "WARNING: #{input} already exists. It will be overwritten."
+  puts "WARNING: #{output} already exists. It will be overwritten."
   puts "Press CTRL-C to cancel, or press RETURN to proceed."
   print "[CRTL-C or RETURN?]"
   STDIN.gets
