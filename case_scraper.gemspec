@@ -2,10 +2,10 @@
 
 Gem::Specification.new do |s|
   s.name        = 'case_scraper'
-  s.version     = '0.0.4'
-  s.date		= '2013-10-03'
-  s.summary     = "Scrape case citations - volume, reporter, and starting page number - from legal briefs that are in rtf format."
-  s.description = "Scrape case citations - volume, reporter, and starting page number - from legal briefs that are in rtf format."
+  s.version     = '0.1.0'
+  s.date		= '2013-10-10'
+  s.summary     = "Scrape case citations and section headings from legal briefs in *.rtf format."
+  s.description = "Scrape case citations and section headings from legal briefs in *.rtf format."
   s.authors     = ["Greg Kochansky"]
   s.email       = 'greg@greg-k.com'
   s.homepage    = 'http://github.com/gkochans/case_scraper'
