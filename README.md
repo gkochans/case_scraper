@@ -1,8 +1,8 @@
 # Scraping case citations from legal briefs in RTF format.
 
-This simple Ruby script relies on the [Yomu](https://github.com/Erol/yomu) library, which extracts the body text from various document formats. With Version 0.1.0, the script now extract either the full citations, organized under the brief's section headings and sub-headings, or only the volume number, reporter abbreviation, and starting page number.
+This simple Ruby script relies on the [Yomu](https://github.com/Erol/yomu) library, which extracts the body text from various document formats. With Version 0.1.0, the script now extracts either the full citations, organized under the brief's section headings and sub-headings, or only the volume number, reporter abbreviation, and starting page number.
 
-The "full citation with headings" approach allows you to automate the tedious first step in structuring an opposition or reply brief. You can use the output text as a starting point to structure your own argument and make sure that you are addressing the cases cited by your opponent.
+The "full citation with headings" approach allows you to automate the tedious first step in structuring an opposition or reply brief. You can use the output text as a starting point to structure your own argument and to make sure that you are addressing the cases cited by your opponent.
 
 The "volume, reporter, first page only" option gives you a list of citations that you can copy and paste into a service like Westlaw's "Find & Print" and retrieve all the cases in a single batch. Auto-generating the list saves a considerable amount of time compared to copying cites manually, one by one.
 
